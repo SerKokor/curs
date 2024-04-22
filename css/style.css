@@ -1,0 +1,644 @@
+:root {
+    --main-color: rgb(255, 255, 255);
+/*--accent-color-primary: rgb(169, 191, 228);*/
+    --primary-r: 169;
+  	--primary-g: 191;
+  	--primary-b: 228;
+  	--accent-color-primary: rgb(var(--primary-r), var(--primary-g), var(--primary-b));
+/*--accent-color-second: rgb(255, 194, 199);*/
+	--second-r: 255;
+  	--second-g: 194;
+  	--second-b: 199;
+  	--accent-color-second: rgb(var(--second-r), var(--second-g), var(--second-b));
+    --padding-left-standart: 82px;
+}
+
+
+body {
+	margin: 0px;
+	background-color: #eee;
+}
+/*header, main, footer {
+	width: 980px;	
+	margin: 0 auto;
+}*/
+.content-all {
+	width: 980px;	
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: var(--main-color);
+}
+.padding-left {
+	padding-left: var(--padding-left-standart);
+}
+
+.section-title, .section-content {
+	/* Букет із кущових троянд “Довгоочікуване щастя” */
+	color: rgb(53, 31, 33);
+	font-weight: 400;
+	text-align: left;
+}
+.section-title {
+	/* Букет із кущових троянд “Довгоочікуване щастя” */
+	font-family: Lora;
+	font-size: 24px;
+	line-height: 31px;
+	padding-top: 42px;
+	margin-top: 0;
+	margin-bottom: 13px;
+}
+.section-content {
+	font-family: "Source Sans 3";
+	font-size: 0.9em;
+	line-height: 18px;
+}
+/* В кошик */
+.button-border, .button-fill, .button-rect{
+	font-family: "Source Sans 3";
+	font-size: 13px;
+	line-height: 16px;
+	letter-spacing: 0%;
+	text-align: center;
+	width: 130px;
+	height: 30px;
+}
+.button-fill, .button-rect{
+	color: var(--main-color);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button-border {
+	color: var(--accent-color-primary);
+	background-color: var(--main-color);
+	text-shadow: 0.2px 0.2px 0px rgb(152, 158, 195);
+	border: 2px solid var(--accent-color-second);
+	border-radius: 50px;
+	display: block;
+	margin: 0 auto;
+}
+.button-fill {
+	font-weight: 600;
+	background: var(--accent-color-second);
+	border-radius: 50px;
+}
+.button-rect {
+	font-weight: 400;
+	background: var(--accent-color-primary);
+}
+button.button-fill:hover, .button-border:hover {
+	box-shadow: 0px 4px 8px 0px rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.75);
+	cursor: pointer;
+}
+button {
+	border: none;
+}
+/* header */
+header {
+  	background: url(../images/logo.png) no-repeat 82px 8px / 132px 55px;
+	background-color: var(--accent-color-primary);
+	box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	min-height: 70px;
+	padding: 8px 0;
+	box-sizing: border-box;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+nav, nav ul {
+	display: flex;
+	justify-content: space-around;
+/*	flex-wrap: wrap;*/
+	align-items: center;
+	padding-right: 60px;
+}
+nav {
+	height: 100%;
+	padding-top: 4px;
+}
+nav ul {
+	padding-left: 280px;
+}
+nav ul li {
+	width: 120px;
+	list-style-type: none;
+	text-align: center;
+}
+nav ul a {
+	color: var(--main-color);
+	font-family: Lora, Regular;
+	font-size: 0.9em;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 0.1px;
+	text-decoration-line: none;
+	border-bottom: 2px solid transparent;
+}
+nav ul a:hover {
+	border-bottom: 2px solid var(--main-color);
+}
+nav img {
+	width: 20px;
+	height: 20px;
+}
+nav img:hover {
+	cursor: pointer;
+}
+main {
+	
+}
+.top-flower {
+	background: url(../images/bg_web-no-background.png) no-repeat  right / 400px 385px;
+	height: 455px;
+	position: relative;
+}
+	
+.top-content {
+	position: relative;
+	top: 120px;
+	width: 300px;
+}
+.outer-button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 30px;
+	width: 280px;
+	margin-top: 24px;
+}
+.about {
+	position: relative;
+/*	width: 100%;*/
+	height: 405px;
+/*	box-sizing: border-box;*/
+}
+
+.about-img-container {
+	display: flex;
+	width: 630px;
+	padding-right: var(--padding-left-standart);
+	margin: 0 auto ; /*35px*/
+	
+}
+.about-img-item {
+	width: 210px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 6px 0;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 100% 102%;
+}
+.bouquets {
+	background-image: url(../images/bouquets.jpg);
+}
+.natural_flowers {
+	background-image: url(../images/natural_flowers.jpg);
+}
+.own_bouquet {
+	background-image: url(../images/own_bouquet.png);
+}
+.about-content {
+	position: relative;
+	top: 8px;
+	width: 316px;
+}
+
+.about-content p {
+  padding-left: 16px;
+  position: relative; /* Якщо потрібно позиціонувати лінію вертикально (top) відносно p, а не div. */
+}
+.about-content p:first-of-type::before{
+       position: absolute;
+       left: 0;
+       top: 0.2em; /* Зсув від верхньої межі < p> */
+       content: "";
+       background-color: var(--accent-color-second);
+       width: 2px;
+       height: 1.5em;
+}
+
+.abstract_background, .women, .inst, .viber, .facebook {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+}
+.abstract_background {
+	background-image: url(../images/abstract_background.png);
+	width: 350px;
+	height: 270px;
+	left: 630px;
+	top: 210px;
+}
+.women {
+	background-image: url(../images/women.png);
+	width: 320px;
+	height: 180px;
+	left: 588px;
+	top: 225px;
+}
+.inst {
+	background-image: url(../images/inst.png);
+	width: 20px;
+	height: 22px;
+	right: 60px;
+	top: 258px;	
+}
+.facebook {
+	background-image: url(../images/fb.png);
+	width: 20px;
+	height: 22.86px;
+	right: 60px;
+	top: 294px;
+}
+.viber {
+	background-image: url(../images/viber.png);
+	width: 25px;
+	height: 25.87px;
+	right: 58px;
+	top: 329px;
+}
+.work-for-you {
+	height: 156px;
+	background: rgba(169, 191, 228, 0.3);
+	padding-top: 16px;
+}
+.work-for-you h2 {
+	color: rgb(152, 158, 195);
+	font-family: Lora;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	margin-top: 0;
+}
+
+.work-for-you img {
+	width: 65.2px;
+	height: 55px;
+}
+.work-for-you-list {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: 0 36px;
+}
+.work-for-you-list p {
+	text-align: center;
+	font-size: 0.8em;
+	width: 80%;
+	margin: 0 auto;
+}
+.work-for-you-list p:first-of-type {
+	padding-left: 1em;
+} 
+.work-for-you-item {
+	width: 240px;
+}
+.catalog {
+	min-height: 40px;
+	padding-bottom: 36px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.catalog-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-right: var(--padding-left-standart);
+}
+.catalog-item {
+/*	width: 33%;*/
+/*	text-align: center;*/
+	height: 331px;
+	margin: 10px;
+  	border: 1px solid #ccc;
+/*  	padding: 10px;*/
+/*  	width: calc(33.33% - 20px - 2/3*var(--padding-left-standart));  Три елементи в рядок */
+	width: 200px;
+  	position: relative;
+  	z-index: 20;
+  	box-shadow: 0px 4px 8px 0px var(--accent-color-second);
+	background-color: rgb(255, 255, 255);
+	padding-bottom: 12px;
+
+}
+.catalog-item:hover {
+	box-shadow: 0px 4px 8px 0px var(--accent-color-primary);
+}
+.catalog-item p{
+	text-align: center;
+}
+.catalog-item img {
+  width: 100%;
+  height: auto;
+}
+.catalog-nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+/*		visibility:  hidden;*/
+		z-index: 15;
+}
+.catalog-nav img, #nextBtnCom, #prevBtnCom{
+	width: 36px;
+	height: 16px;
+	cursor: pointer;
+	margin: 0;
+}
+.catalog-nav ul, #coment-ul {
+/*	padding-right: 6px;*/
+	list-style-type: disc;
+	font-size: 2rem;
+	color: var(--accent-color-second);
+	display: flex;
+	justify-content: center;
+	list-style-position: inside;
+	padding-inline-start: 8px;
+}
+.catalog-nav ul li{
+	width: 16px;
+	color: var(--accent-color-primary);
+/*	padding-left: 16px;*/
+}
+.catalog-nav ul li:first-of-type {
+	color: var(--accent-color-second);
+}
+
+.reviews {
+	position: relative;
+	background: rgba(169, 191, 228, 0.2);
+	min-height: 690px;
+	padding: 32px 0;
+	color: rgb(172, 172, 172);
+	
+/*	overflow-y: visible;*/
+}
+.coments-container, .coments-container2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 550px;
+	height: 120px;
+	position: relative;
+	left: var(--padding-left-standart);
+	margin-top: 24px;
+}
+.coments-container2 {
+	left: calc(2.5*var(--padding-left-standart));
+}
+.coments-item {
+	flex: 4;
+	position: relative;
+}
+.coment-body {
+/*	flex: 5;*/
+	margin-top: 0;
+	margin-bottom: 6px;
+}
+.coment-name {
+	margin-top: 6px;
+	color: rgb(152, 158, 195);
+	padding-bottom: 18px;
+}
+.reviews img {
+/*	flex: 1;*/
+	width: 100px;
+	margin-right: 42px;
+}
+
+.line {
+       /*position: absolute;
+       left: 0px;
+       top: 12em; /* Зсув від верхньої межі < p> */
+       margin: 0;
+       content: "";
+       background-color: var(--accent-color-second);
+       width: 1.5em;
+       height: 2px;
+}
+.flowers1 {
+	width: 530px;
+	height: 395px;
+	background-image: url("../images/flowers 1.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+/*	transform: rotate(45deg);*/
+	position: absolute;
+	z-index: 10;
+	border-radius: 16px;
+/*	left: 662.58px;*/
+	right: -137.42px;
+	top: -239.12px;
+	margin: 0;
+/*	bottom: 37.88px;*/
+}
+.flowers2 {
+/*	padding: var(--padding-left-standart);*/
+	margin: 0;
+	width: 264px;
+	height: 190px;
+	background-image: url("../images/flowers 2.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	transform: rotate(90deg);
+	position: absolute;
+	z-index: 10;
+/*	border-radius: 16px;*/
+	left: -36px;
+	top: 260px;
+	/*right: -137.42px;
+/*	bottom: 37.88px;*/
+}
+.input-1str, .reviews textarea {
+	
+	box-sizing: border-box;
+	border-radius: 10px;
+	border-color: transparent;
+/*	background: rgb(255, 255, 255);*/
+	display: block;
+	padding-left: 24px;
+	margin: 10px 0px;
+	color: rgb(53, 31, 33);
+	font-family: Source Sans Pro;
+	font-size: 0.9rem;
+	font-weight: 400;
+	line-height: 15px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+::placeholder {
+	color: rgba(172, 172, 172, 0.5);
+}
+.reviews .input-1str{
+ 	height: 29px;
+ 	width: 816px;
+}
+.reviews textarea {
+ 	resize: none;
+ 	width: 816px;
+ 	padding-top: 10px;
+ }
+.input-1str:focus,.reviews textarea:focus {
+ 	outline: none;
+ 	box-shadow: 0 0 0 1px var(--accent-color-primary);
+}
+.pay {
+	height: 470px;
+	padding-bottom: 42px;
+	position: relative;
+/*	overflow: hidden;*/
+}
+.pay-outer {
+	display: flex;
+	flex-direction: row;
+/*	align-items: center;*/
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-right: var(--padding-left-standart);
+	padding-top: 18px;
+}
+
+.pay-item {
+	width: calc((100% - var(--padding-left-standart))/3 - 30px);
+	height: 180px;
+/*	display: flex;*/
+/*	align-items: self-start;*/
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	
+}
+.pay-item p{
+	text-align: center;
+	padding: 0px 18px;
+/*	margin-top: 10px;*/
+	
+}
+.pay-disc {
+	width: 65px;
+	height: 65px;
+	margin: 0 auto;
+	color: rgb(169, 191, 228);
+	font-family: Lora;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 65px;
+	letter-spacing: 0%;
+	text-align: center;
+	box-shadow: 0px 4px 8px -2px var(--accent-color-second);
+	background: rgb(255, 255, 255);
+	border-radius: 50%;
+}
+footer {
+	background-color: var(--accent-color-primary);
+	position: relative;
+/*	height: 185px;*/
+	padding: 8px var(--padding-left-standart);
+}
+footer img.logo {
+	display: block;
+	width: 136px;
+	margin: 0 auto;
+}
+.flowers3 {
+/*	padding: var(--padding-left-standart);*/
+	margin: 0;
+	width: 167px;
+	height: 400px;
+	position: absolute;
+	right: -42px;
+	top: -145px;
+/*	bottom: -262px;*/
+	transform: rotate(305deg);
+	background-image: url("../images/flowers 3.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 10;
+/*	border-radius: 16px;
+/*	left: -36px;*/
+
+/*	bottom: 37.88px;*/
+}
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+}
+.footer-item {
+	flex: 1;
+}
+.footer-item:nth-child(4){
+	flex: 1;
+	position: relative;
+}
+
+.footer-content {
+	font-family: "Source Sans 3";
+	font-size: 0.7rem;
+	line-height: 1rem;
+	color: var(--main-color) ;
+/*	font-size: 11px;*/
+	font-weight: 300;
+	margin: 0px;
+/*	text-align: center;*/
+}
+ul.footer-content {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.footer-title {
+	/* Букет із кущових троянд “Довгоочікуване щастя” */
+	font-family: Lora;
+	font-size: 1rem;
+	color: var(--main-color) ;
+	font-weight: 400;
+	line-height: 1.2rem;
+	padding-top: 18px;
+	margin-top: 0;
+	margin-bottom: 13px;
+}
+footer .input-1str{
+ 	width: 260px;
+ 	padding-left: 8px;
+ }
+footer .button-fill, footer .input-1str{
+	height: 28px;
+ 	font-size: 0.8rem;	
+ 	line-height: 2Rem;
+ 	box-sizing: border-box;
+ 	position: absolute;
+ 	right: 12px;
+ 	top: 24px;
+ 	border-radius: 50px;
+ 	margin: 0;
+ 	box-shadow: none;
+}
+footer .button-fill {
+	width: 100px;
+}
+footer .button-fill:hover {
+	box-shadow: none;
+	color: var(--accent-color-primary);
+}
+
+p.footer-content {
+	padding-top: 12px;
+}
+.footer-item .inst, .footer-item .facebook, .footer-item .viber {
+	top: 64px;
+}
+.footer-item .inst {
+	right: 160px;
+}
+.footer-item .facebook {
+	right: 120px;
+}
+.footer-item .viber {
+	right: 76px;
+}
